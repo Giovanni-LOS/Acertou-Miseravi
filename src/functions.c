@@ -115,7 +115,7 @@ void add(char num1[], char num2[], int* flagPtr) {
                     num2[i] = (num2[i]+(num1[j]-48))-10+r;
                     r=1;
                     i--;
-                    j--;result[current] = '\0';
+                    j--;
                     if (i == -1) {
                         printf("1");
                     }
@@ -331,7 +331,6 @@ void subtrac(char num1[], char num2[], int* flagPtr) {
 
 //Multiply the two numbers
 void mult(char num1[], char num2[], char numAux[], int *flagPtr) {
-    *flagPtr = 2;
     
     char numAux2[1010];
     strcpy(numAux2, numAux);
@@ -360,6 +359,7 @@ void mult(char num1[], char num2[], char numAux[], int *flagPtr) {
             strcpy(numAux2, numAux);
         } 
     }
+    *flagPtr = 2;
     zeroFormated(numAux,lenAux);
 }
 
