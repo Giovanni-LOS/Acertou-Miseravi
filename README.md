@@ -16,3 +16,4 @@
     2. Testado no Archlinux, cmake version 3.27.4
     3. CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
+    Giovanni L. O. da Silva Copyright (c) 2023 Author. All Rights Reserved.
