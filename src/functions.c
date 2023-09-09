@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+//Compare the lenght of strings.
 int numCompare(char num1[], char num2[], int len) {
     
     for (int i = 0; i<len; i++) {
@@ -14,6 +15,7 @@ int numCompare(char num1[], char num2[], int len) {
     return 0;
 }
 
+//Exclude additional zeros.
 void zeroFormated(char num[], int len) {
     int zeroIndex = 0;
     for(int i = 0; i<len; i++) {
@@ -31,6 +33,7 @@ void zeroFormated(char num[], int len) {
     num[len - zeroIndex] = '\0';
 }
 
+//Multiply the number by its corresponding index
 void multFormated(char numAux[], int zeroQuant) {
    
     int len = strlen(numAux),end = len;
@@ -48,6 +51,8 @@ void multFormated(char numAux[], int zeroQuant) {
         numAux[j] = aux;
     }
 }
+
+//Add the two numbers together.
 void add(char num1[], char num2[], int* flagPtr) {
     
     int len1 = strlen(num1), len2 = strlen(num2), r=0;
@@ -190,6 +195,7 @@ void add(char num1[], char num2[], int* flagPtr) {
     }
 }
 
+//Subtract the two numbers.
 void subtrac(char num1[], char num2[], int* flagPtr) {
     
     int len1 = strlen(num1), len2 = strlen(num2), r=0;
@@ -323,6 +329,7 @@ void subtrac(char num1[], char num2[], int* flagPtr) {
     }
 }
 
+//Multiply the two numbers
 void mult(char num1[], char num2[], char numAux[], int *flagPtr) {
     *flagPtr = 2;
     
@@ -356,6 +363,7 @@ void mult(char num1[], char num2[], char numAux[], int *flagPtr) {
     zeroFormated(numAux,lenAux);
 }
 
+//Performs the task of processing the data according to the informed operator.
 void operation(char num1[], char num2[], char numAux[], int o, int* flagPtr) {
     switch (o) {
         case 1:
