@@ -54,7 +54,7 @@ void multFormated(char numAux[], int zeroQuant) {
 
 //Add the two numbers together.
 void add(char num1[], char num2[], int* flagPtr) {
-    
+    *flagPtr = 0;
     int len1 = strlen(num1), len2 = strlen(num2), r=0;
     if (len1>=len2) {
         for(int i = len1-1, j = len2-1; i >= 0 || j >=0;) {
@@ -115,7 +115,7 @@ void add(char num1[], char num2[], int* flagPtr) {
                     num2[i] = (num2[i]+(num1[j]-48))-10+r;
                     r=1;
                     i--;
-                    j--;
+                    j--;result[current] = '\0';
                     if (i == -1) {
                         printf("1");
                     }
@@ -197,7 +197,7 @@ void add(char num1[], char num2[], int* flagPtr) {
 
 //Subtract the two numbers.
 void subtrac(char num1[], char num2[], int* flagPtr) {
-    
+    *flagPtr = 0;
     int len1 = strlen(num1), len2 = strlen(num2), r=0;
     if (len1>len2) {
         for(int i = len1-1, j = len2-1; i >= 0 || j >=0;) {
