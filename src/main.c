@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "../Projeto_1/include/project_headers.h"
+#include "../include/project_headers.h"
 #define MAX 504
 
 
