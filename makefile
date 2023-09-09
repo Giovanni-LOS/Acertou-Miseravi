@@ -1,9 +1,9 @@
-IDIR =../Projeto_1/include
+IDIR =../Acertou-Miseravi-master/include
 CC=gcc
 CFLAGS=-I$(IDIR)
 
-ODIR=../Projeto_1/src
-LDIR =../Projeto_1
+ODIR=../Acertou-Miseravi-master/src
+LDIR =../Acertou-Miseravi-master
 
 LIBS=-lm
 
